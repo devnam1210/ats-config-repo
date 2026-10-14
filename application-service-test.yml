@@ -1,0 +1,23 @@
+server:
+  port: "${APPLICATION_SERVER_PORT:8083}"
+
+spring:
+  datasource:
+    url: "${APPLICATION_DB_URL:jdbc:postgresql://localhost:5432/application_sdb_test}"
+    username: "${APPLICATION_DB_USERNAME:postgres}"
+    password: "${APPLICATION_DB_PASSWORD}"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: false
+
+ats:
+  demo:
+    message: "application-service - TEST"
+
+job-service:
+  url: "${JOB_SERVICE_URL:http://localhost:8081}"
+candidate-service:
+  url: "${CANDIDATE_SERVICE_URL:http://localhost:8082}"

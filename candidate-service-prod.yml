@@ -1,0 +1,18 @@
+server:
+  port: "${CANDIDATE_SERVER_PORT:8082}"
+
+spring:
+  datasource:
+    url: "${CANDIDATE_DB_URL}"
+    username: "${CANDIDATE_DB_USERNAME}"
+    password: "${CANDIDATE_DB_PASSWORD}"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: false
+
+ats:
+  demo:
+    message: "candidate-service - PROD"
