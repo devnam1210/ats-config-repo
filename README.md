@@ -127,3 +127,5 @@ Push Git không có nghĩa mọi ứng dụng đang chạy tự cập nhật.
 Kiểm tra cú pháp YAML, đủ 3 service x 3 profile, database dev/test tách biệt,
 placeholder bắt buộc ở prod và không chứa mật khẩu literal.
 Chưa chạy Config Server/ATS hoặc xác thực schema PostgreSQL.
+
+Dev giữ heartbeat Eureka 10s/30s như project gốc. Actuator chỉ mở health/info; env không được công khai trong cấu hình mới.
