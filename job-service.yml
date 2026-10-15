@@ -8,3 +8,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  ats:
+    demo:
+      message: "toi la job-service"

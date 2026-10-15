@@ -14,3 +14,4 @@ management:
 ats:
   config:
     source: ats-config-repo
+    message: "toi la application"
