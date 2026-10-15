@@ -15,4 +15,5 @@ spring:
 
 ats:
   demo:
-    message: "job-service - DEV"
+    config:
+      message: "job-service - DEV"
